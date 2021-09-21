@@ -10,24 +10,28 @@ namespace Variables
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("------HUD------");
             Console.WriteLine("You're Gonna Die");
+
+            Console.WriteLine("");
 
             string Name;
             string HPT;
           
             int HP;
 
-            Name = "Health Points Remaining";
+            Name = "Health Points";
             Console.WriteLine(Name);
 
-            HP = 100; 
+            HP = 100;
+
 
 
 
             Console.WriteLine(HP);
 
-            
 
+            Console.WriteLine("");
 
 
 
@@ -41,10 +45,10 @@ namespace Variables
             Console.WriteLine(Name);
 
             HP = HP - 25; 
-            Console.WriteLine(HP); 
+            Console.WriteLine(HP);
 
 
-
+            Console.WriteLine("");
 
 
 
@@ -57,27 +61,33 @@ namespace Variables
             Name = "Enemy Dies";
             Console.WriteLine(Name);
 
+            Console.WriteLine("");
 
-            float XP; // kph
-            float XPGAINED; // in kms
-             // pointless due to 100.0f. it will be overwritten. "f" tells its a float. 100.0f = 100 float. 
-            XP = 100.0f; // kph
-            XPGAINED = 50.0f; // kms
+
+            float XP; 
+            float XPGAINED; 
+      
+            XP = 100.0f; 
+            XPGAINED = 50.0f; 
 
             Console.WriteLine("EXP GAINED " + XP);
-            Console.WriteLine("BONUS CRITICAL HIT POINTS " + XPGAINED);
+            Console.WriteLine("BONUS CRITICAL HIT EXP " + XPGAINED);
 
 
-            // ------------------ INTS vs. FLOATS------------------
-            int intTest; // bad naming
-            float floatTest; // bad naming
-            float floatTest2;
-            intTest = 10 / 3; // 3 ???
-            floatTest = 10 / 3; // 3.333 ???
-            floatTest2 = 10.0f / 3.0f; // 3.333
-            Console.WriteLine(intTest);
-            Console.WriteLine(floatTest);
-            Console.WriteLine(floatTest2);
+            float BonusXP;
+
+            BonusXP = 100.0f + 50.0f;
+
+            Console.WriteLine("Total EXP Gained " + BonusXP);  
+
+
+
+
+
+
+
+    
+
 
 
 
