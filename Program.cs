@@ -10,17 +10,23 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("------HUD------");
-            Console.WriteLine("You're Gonna Die");
+            Console.WriteLine("------HUD------"); // HUD
+            Console.WriteLine("Press Any Key To Continue"); // Intructions
+            Console.ReadKey(true);
+            Console.WriteLine(""); //space between lines
+            Console.WriteLine("You're Gonna Die"); // Game name
 
-            Console.WriteLine("");
+
+            Console.WriteLine(""); //space between lines
+
+            Console.ReadKey(true); // key press to continue
 
             string Name;
             string HPT;
           
             int HP;
 
-            Name = "Health Points";
+            Name = "Player Health Points";
             Console.WriteLine(Name);
 
             HP = 100;
@@ -32,7 +38,7 @@ namespace Variables
 
 
             Console.WriteLine("");
-
+            Console.ReadKey(true);
 
             Console.WriteLine("------Battle!------");
 
@@ -51,12 +57,12 @@ namespace Variables
 
             Console.WriteLine("");
 
-
+            Console.ReadKey(true);
 
             Name = "Player Attacks"; 
             Console.WriteLine(Name);
 
-            Name = "CRITICAL HIT";
+            Name = "CRITICAL HIT 100 DMG";
             Console.WriteLine(Name);
 
             Name = "Enemy Dies";
@@ -64,6 +70,7 @@ namespace Variables
 
             Console.WriteLine("");
 
+            Console.ReadKey(true);
 
             float XP; 
             float XPGAINED; 
@@ -73,8 +80,13 @@ namespace Variables
 
             Console.WriteLine("------Battle Ends-------");
             Console.WriteLine("");
+
+            Console.ReadKey(true);
+
             Console.WriteLine("------Victory Music Plays-------");
             Console.WriteLine("");
+
+            Console.ReadKey(true);
 
             Console.WriteLine("EXP GAINED " + XP);
             Console.WriteLine("BONUS CRITICAL HIT EXP " + XPGAINED);
@@ -89,6 +101,9 @@ namespace Variables
 
 
             Console.WriteLine("");
+
+            Console.ReadKey(true);
+
             Console.WriteLine("----Boss Music Intensifies----");
 
 
