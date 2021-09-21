@@ -34,6 +34,7 @@ namespace Variables
             Console.WriteLine("");
 
 
+            Console.WriteLine("------Battle!------");
 
             Name = "Enemy Attacks";
             Console.WriteLine(Name);
@@ -68,7 +69,12 @@ namespace Variables
             float XPGAINED; 
       
             XP = 100.0f; 
-            XPGAINED = 50.0f; 
+            XPGAINED = 50.0f;
+
+            Console.WriteLine("------Battle Ends-------");
+            Console.WriteLine("");
+            Console.WriteLine("------Victory Music Plays-------");
+            Console.WriteLine("");
 
             Console.WriteLine("EXP GAINED " + XP);
             Console.WriteLine("BONUS CRITICAL HIT EXP " + XPGAINED);
@@ -78,8 +84,12 @@ namespace Variables
 
             BonusXP = 100.0f + 50.0f;
 
-            Console.WriteLine("Total EXP Gained " + BonusXP);  
+            Console.WriteLine("Total EXP Gained " + BonusXP);
 
+
+
+            Console.WriteLine("");
+            Console.WriteLine("----Boss Music Intensifies----");
 
 
 
