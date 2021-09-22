@@ -10,7 +10,7 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("------HUD------"); // HUD
+          
 
             Console.WriteLine("Press Any Key To Continue"); // Intructions
 
@@ -18,27 +18,54 @@ namespace Variables
 
             Console.WriteLine(""); //space between lines
 
+            Console.WriteLine("TITLE:");
             Console.WriteLine("You're Gonna Die"); // Game name
 
+            Console.WriteLine("");
+            Console.ReadKey(true);
+
+            Console.WriteLine("------HUD------"); // HUD
 
             Console.WriteLine(""); 
             Console.ReadKey(true); 
 
+            float XP; 
+            float XPGAINED; 
 
             string Name;
             string HPT;
-          
-            int HP;
+
+            int BHP;
+            int EXP; // Player EXP
+            int HP; // Player HP
+            int EHP; // Enemy HP
+
 
             Name = "Player Health Points";
             Console.WriteLine(Name);
 
             HP = 100;
-
-
-
-
             Console.WriteLine(HP);
+
+
+            Console.WriteLine("");
+
+            Console.WriteLine("EXP");
+
+
+            EXP = 0;  
+            Console.WriteLine(EXP);
+
+           
+            
+
+
+        
+
+           
+
+
+
 
 
             Console.WriteLine("");
@@ -47,12 +74,20 @@ namespace Variables
             Console.WriteLine("------Battle!------");
 
             Console.WriteLine("");
+            Console.ReadKey(true);
 
-            Name = "-Enemy Attacks";
+            Console.WriteLine("Enemy Health Remaining");
+
+            EHP = 100;
+            Console.WriteLine(EHP);
+
+            Console.WriteLine("");
+
+            Name = "Enemy Attacks";
             Console.WriteLine(Name);
 
-            HPT = "Damage Taken -25";
-            Console.WriteLine(HPT);
+            Console.WriteLine("Damage Taken - 25");
+            
 
             Name = "Health Points Remaining";
             Console.WriteLine(Name);
@@ -67,17 +102,22 @@ namespace Variables
             Name = "-Player Attacks"; 
             Console.WriteLine(Name);
 
-            Name = "CRITICAL HIT 100 DMG";
+            Name = "CRITICAL HIT 100 DMG"; // needs to be fixed
             Console.WriteLine(Name);
 
+            Console.WriteLine("");
+
+            Console.WriteLine("Enemy Health Remaining");
+            EHP = 100 - 100;
+            Console.WriteLine(EHP);
+
+            Console.WriteLine("");
             Name = "Enemy Dies";
             Console.WriteLine(Name);
 
             Console.WriteLine("");
             Console.ReadKey(true);
 
-            float XP; 
-            float XPGAINED; 
       
             XP = 100.0f; 
             XPGAINED = 5.0f;
@@ -100,6 +140,7 @@ namespace Variables
             float LostBonusXP;
 
             BonusXP = 100.0f * 5.0f;
+
             LostBonusXP = 500.0f / 500.0f - 1.0f;
 
             Console.WriteLine("Total EXP Gained " + BonusXP);
@@ -129,7 +170,7 @@ namespace Variables
             Name = "-Boss Attacks";
             Console.WriteLine(Name);
 
-            HPT = "Heavy Damage Taken -50";
+            HPT = "Heavy Damage Taken -50"; // needs to be fixed
             Console.WriteLine(HPT);
 
             Name = "Health Points Remaining";
@@ -159,7 +200,7 @@ namespace Variables
             Name = "-Boss Attacks";
             Console.WriteLine(Name);
 
-            HPT = "Heavy Damage Taken -25";
+            HPT = "Heavy Damage Taken -25"; // needs to be fixed
             Console.WriteLine(HPT);
 
             Name = "CRITICAL HIT";
